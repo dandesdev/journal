@@ -1,5 +1,5 @@
 ---
-title: "Soul, muscle, brain and bones."
+title: "Soul, muscle, brain and bones"
 date: 2025-19-12
 lang: "en"
 translationOf: "tech-roles-br"
@@ -21,5 +21,6 @@ If you want to be an engineer, you probably want to learn about continuous integ
 ## 🏗️ Architecture
 Some call architecture "zoomed-out design" because it widens the view beyond visuals presented to the users or functionalities of individual services to aim for the big structure holding everything together. It focuses on long-term strategy and maintainability of the whole. The architecture defines the environment, tools and constraints that everyone else works within. More often than not, the architecture role is absorbed or diluted into other roles when the scale of the project isn't massive and frightening enough, and it is rare to have a specialized architect on a smaller project.
 If you want to dive into applications and software architecture, you should start by searching for microservices vs. monolith patterns, cloud-native (AWS, Google Cloud, Azure), data governance, compliance, Zero Trust and disaster recovery.
----
+
+##
 But although these wanderings offers us a realistic understanding of creating a digital product today, it is important to notice that these are all very conceptual and not wrote in stone, one person or team might have to walk through more than one of these regions. If you are a founder, or just have a thirsty curiosity or an everlasting impulse to create, as I do, you maybe will be, at least a bit, a designer, an engineer, a developer and an architect. At the end of the day, It comes to each project or company to understand its needs and priorities whilst keeping their resources and management in check. 
