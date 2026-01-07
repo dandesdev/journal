@@ -27,9 +27,10 @@ if (!post) throw new Error(`Post not found: ${slug}`);
 const { Content } = await post.render();
 
 const translationEntry = post.data.translationOf
-  ? posts.find(
-      (p) => p.slug === post.data.translationOf && p.data.lang !== lang
-    )
+  ? posts.find((p) => {
+      const pSlugWithoutLang = p.slug.split("/")[1];
+      return pSlugWithoutLang === post.data.translationOf && p.data.lang !== lang;
+    })
   : null;
 
 const pageQuery = Astro.url.search || "";
@@ -37,7 +38,7 @@ const pageQuery = Astro.url.search || "";
 const translation: Translation | undefined = translationEntry
   ? {
       lang: translationEntry.data.lang,
-      slug: translationEntry.slug,
+      slug: translationEntry.slug.split("/")[1],
       title: translationEntry.data.title,
       query: pageQuery,
     }
