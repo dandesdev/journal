@@ -2,7 +2,7 @@
 title: "Scaf, for Scaffolding"
 date: 2026-01-07
 lang: "en"
-translationOf: "scaf-para-scaffolding"
+translationOf: "scaf-de-scaffolding"
 description: "A tool to get your folders and files structure. My first npm package"
 tags: ["npm", "scaf", "tool", "node", "javascript"]
 ---
