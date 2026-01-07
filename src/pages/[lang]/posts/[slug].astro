@@ -6,15 +6,21 @@ import LanguageSwitcher from "../../../components/LanguageSwitcher.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("posts");
-  return posts.map((post) => ({
-    params: { lang: post.data.lang, slug: post.slug },
-  }));
+  return posts.map((post) => {
+    const slugWithoutLang = post.slug.split("/")[1];
+    return {
+      params: { lang: post.data.lang, slug: slugWithoutLang },
+    };
+  });
 }
 
 const { lang, slug } = Astro.params as { lang: Lang; slug: string };
 
 const posts = await getCollection("posts");
-const post = posts.find((p) => p.data.lang === lang && p.slug === slug);
+const post = posts.find((p) => {
+  const slugWithoutLang = p.slug.split("/")[1];
+  return p.data.lang === lang && slugWithoutLang === slug;
+});
 
 if (!post) throw new Error(`Post not found: ${slug}`);
 
