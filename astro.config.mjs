@@ -9,7 +9,7 @@ import rehypeExternalLinks from 'rehype-external-links';
 
 
 export default defineConfig({
-  site: 'https://danielx-art.github.io',
+  site: 'https://dandesdev.github.io',
   base: '/journal/',
   vite: {
     plugins: [tailwindcss()]

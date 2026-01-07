@@ -12,7 +12,7 @@ I figured it couldn’t be that no real 3D snake game existed — and in a way, 
 
 What I mean by a truly 3D snake game is that the “snake” can actually move through all three dimensions of a spatial world; that is, it can go left or right, up or down, but also inward and outward.
 
-So I decided to start this project and give the game the look and feel I’d been imagining — and now it’s ready to share. If you’re still not sure what I mean, just take a look: [**3D Snake Game**](https://danielx-art.github.io/snakegame3d/)
+So I decided to start this project and give the game the look and feel I’d been imagining — and now it’s ready to share. If you’re still not sure what I mean, just take a look: [**3D Snake Game**](https://dandesdev.github.io/snakegame3d/)
 
 Worth noting: as of now, the game is desktop-only, in the browser. There’s no adaptation yet for small, touch-based screens without a keyboard.
 

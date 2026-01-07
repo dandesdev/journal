@@ -9,7 +9,7 @@ tags: ["game", "3d", "casual"]
 Isso mesmo. Nas últimas semanas tive que lidar com algumas tarefas… onerosas… e, para equilibrar, mergulhei em uma ideia antiga, um projeto simples, rápido e casual mas que parecia muito divertido: um jogo de cobrinha em 3D, mas 3D *de verdade*. Se você procurar por aí, vai encontrar muitos jogos de cobrinha que se dizem 3D, mas que não são de fato 3D, isto é, tem algumas características tridimensionais, como os modelos ou o terreno, mas a mecânica do jogo em si, não. 
 Pensava que não era possível que de fato não exista nenhum jogo de cobrinha em 3D – e de certo modo estava certo, porém, pelo que encontrei, existia apenas um, que ainda não era exatamente como eu imaginava. 
 O que eu quero dizer por um jogo de cobrinha 3D *de verdade* é que nesse jogo a "cobrinha" pode realmente se mover em todas as três dimensões de um mundo espacial, ou seja, pode ir para a direita ou para a esquerda, para cima ou para baixo, mas também para dentro e para fora. 
-Decidi então iniciar esse projeto e dar ao meu jogo a carinha que eu imaginava, e agora já está pronto para compartilhar. E se não entendeu ainda como é, vai logo ver: [**Jogo da Cobrinha 3D**](https://danielx-art.github.io/snakegame3d/)
+Decidi então iniciar esse projeto e dar ao meu jogo a carinha que eu imaginava, e agora já está pronto para compartilhar. E se não entendeu ainda como é, vai logo ver: [**Jogo da Cobrinha 3D**](https://dandesdev.github.io/snakegame3d/)
 
 Vale lembrar que, no presente momento, o jogo é somente para desktop, no browser. Até o momento, ainda não existe uma adaptação para telas pequenas e sensíveis ao toque, sem teclado.
 

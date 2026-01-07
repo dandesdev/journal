@@ -10,7 +10,7 @@ tags: ["meta", "first", "casual"]
 Hello! I'm Daniel, and this is my dev journal/journal! – since I started giving shape to this I still can't figure out which. As I begun a more... lets say, aggressive... journey into becoming a successful developer, I realized that it would be interesting to register some stuff on the way.
 So, this website will be a place to share thoughts I find interesting 🤔, maybe challenges I encounter on what I am currently working 🤓, and finally, of course, some silly stuff 🤩.
 
-If you are here, on this post, you probably, I think, came from my portfolio. But, in case you didn't, here is a link to it: [*awesome portfolio*](https://danielx-art.github.io/portfolio/).
+If you are here, on this post, you probably, I think, came from my portfolio. But, in case you didn't, here is a link to it: [*awesome portfolio*](https://dandesdev.github.io/portfolio/).
 
 And If you want to contact me, asks questions, share thoughts yourself, offer me an incredible job (I love you too), you can contact me first via e-mail [*daniel.rangel.guedes@gmail.com*](mailto:daniel.rangel.guedes@gmail.com)
 

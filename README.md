@@ -3,4 +3,4 @@ Oie, este é o meu projeto pessoal de um diário/blog dev. O nome oficial é *'j
 Hey, this is my personal dev journal/blog project. I call it a journal, but most of the times it is more like a blog. It comes in both English and Brazilian Portuguese, it has a light/dark theme switch, sorting, pagination, MDX support (Markdown + Javascript), beautiful math support, code demos etc. Stop reading from here, go take a look!
 
 ### Daniel
-[Portfolio](https://danielx-art.github.io/portfolio/)
+[Portfolio](https://dandesdev.github.io/portfolio/)

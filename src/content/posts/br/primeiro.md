@@ -8,7 +8,7 @@ tags: ["meta", "first", "casual"]
 ---
 Olá! Sou Daniel, e este é meu blog/diário dev! — os dois. Desde que comecei uma jornada um pouco mais… digamos, agressiva… rumo a me tornar um desenvolvedor de sucesso, percebi que seria interessante registrar algumas coisas pelo caminho. Então, este site vai ser um lugar para compartilhar pensamentos que eu achar interessantes 🤔, talvez desafios que eu encontre em projetos que esteja trabalhando 🤓 e, é claro, também alguma bobeira 🤩.
 
-Em primeiro lugar, se você está aqui neste post, provavelmente veio pelo meu portfólio, porém, caso contrário, segue o link: [*portfolio sensacional*](https://danielx-art.github.io/portfolio/).
+Em primeiro lugar, se você está aqui neste post, provavelmente veio pelo meu portfólio, porém, caso contrário, segue o link: [*portfolio sensacional*](https://dandesdev.github.io/portfolio/).
 
 Além disso, se quiser falar comigo, perguntar coisas, compartilhar ideias, ou me oferecer uma vaga de trabalho excelente (te amo também), pode me escrever por e‑mail: [*daniel.rangel.guedes@gmail.com*](mailto:daniel.rangel.guedes@gmail.com)
 
