@@ -1,6 +1,6 @@
 ---
 title: "Alma, músculos, cérebro e ossos"
-date: 2025-19-12
+date: 2025-12-19
 lang: "br"
 translationOf: "tech-roles"
 description: "Minha maneira de entender o principais papéis na criação de aplicações e software."
