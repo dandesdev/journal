@@ -7,14 +7,17 @@ export const GET: APIRoute = async ({ request }) => {
   const all = await getCollection("posts");
   const items = all
     .filter((p) => (lang ? p.data.lang === lang : true))
-    .map((p) => ({
-      slug: p.slug,
-      title: p.data.title,
-      description: p.data.description ?? "",
-      tags: p.data.tags ?? [],
-      lang: p.data.lang,
-      date: p.data.date ? new Date(p.data.date).toISOString() : null,
-    }));
+    .map((p) => {
+      const slugWithoutLang = p.slug.split("/")[1] || p.slug;
+      return {
+        slug: slugWithoutLang,
+        title: p.data.title,
+        description: p.data.description ?? "",
+        tags: p.data.tags ?? [],
+        lang: p.data.lang,
+        date: p.data.date ? new Date(p.data.date).toISOString() : null,
+      };
+    });
 
   return new Response(JSON.stringify(items), {
     status: 200,
