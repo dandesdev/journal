@@ -11,7 +11,12 @@ export async function getStaticPaths() {
 const { lang } = Astro.params as { lang: Lang };
 
 const posts = await getCollection("posts");
-const filtered = posts.filter((p) => p.data.lang === lang);
+const filtered = posts
+  .filter((p) => p.data.lang === lang)
+  .map((p) => ({
+    ...p,
+    slug: p.slug.split("/")[1] || p.slug,
+  }));
 
 const currentQuery = Astro.url.search || "";
 
