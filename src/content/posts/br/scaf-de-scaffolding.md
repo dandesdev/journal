@@ -15,7 +15,8 @@ Como também queria algo multi-plataforma, fiz scaf baseado em nodeJs. Para inst
 
 #### 1. Instale
 
-```npm install -g @dandesdev/scaf
+```
+npm install -g @dandesdev/scaf
 ```
 
 De maneira alguma você precisa usar npm, sinta-se livre para usar qualquer outro gerenciador de pacotes de sua preferência.
@@ -24,7 +25,8 @@ De maneira alguma você precisa usar npm, sinta-se livre para usar qualquer outr
 
 Decida de onde você quer ver seu scaffolding, então, pelo terminal, vá para esse local e execute
 
-```scaf
+```
+scaf
 ```
 
 Você deve ver todo o scaffolding se materializando bem ali diante de seus olhos. Mas pode ser tão rápido que você perca.

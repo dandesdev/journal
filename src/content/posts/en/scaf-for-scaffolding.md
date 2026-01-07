@@ -15,7 +15,8 @@ I also made it node-based, because I wanted something cross-platform. To install
 
 #### 1. Install It
 
-```npm install -g @dandesdev/scaf
+```
+npm install -g @dandesdev/scaf
 ```
 
 You absolutely don't need to use npm, feel free to use any other package manager you like.
@@ -24,7 +25,8 @@ You absolutely don't need to use npm, feel free to use any other package manager
 
 Decide from where you want your scaffolding, then, in your terminal, get to that location and simply run
 
-```scaf
+```
+scaf
 ```
 
 You should see the entire scaffolding unfolding into your very eyes. It can be blazingly fast thou, so focus not to miss it.
