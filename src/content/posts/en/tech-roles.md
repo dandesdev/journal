@@ -1,6 +1,6 @@
 ---
 title: "Soul, muscle, brain and bones"
-date: 2025-19-12
+date: 2025-12-19
 lang: "en"
 translationOf: "tech-roles-br"
 description: "My personal way of understanding the main roles in creating applications and software."
