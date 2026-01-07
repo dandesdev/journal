@@ -1,0 +1,77 @@
+---
+title: "Faça um teste - update one"
+date: 2025-11-14
+lang: "en"
+translationOf: "cms-update-um"
+description: "A bit more about the structure of the 'Faça um teste', literally 'Make a Test' project"
+tags: ["cms", "project", "faça um teste"]
+---
+
+This project keeps getting more complex 😅. Part of me wants to focus only on the basics (the MVP) and ship something usable as fast as possible, and at the same time, it makes sense to think about the architecture at a more complete level — even if high-level — so that, even starting with the basics, the “main beams” are already in place to support what comes next.
+
+Maybe I’m being naïve, but this is a classic software development dilemma: deciding how much to invest in structure now vs. delivery speed. It’s similar to algorithm choices: you balance “memory” and “time.” For example, in collision detection, using a quadtree (which requires preprocessing and memory) can reduce complexity from O(n²) to something closer to O(n·log n) in many cases.
+
+So, let’s get to it: map the core flows of the app as completely as possible — still in a declarative, high-level way — starting from the beginning:
+
+## What happens when a user logs in for the first time, up to reaching the creation dashboard?
+
+Quick reminder: we’re not exploring **every** single possibility **all at once**. The idea is to record the skeleton and evolve from there.
+
+## Home
+
+- Primary actions: "Login", "Create", and "Respond".
+- Clicking “Login” authenticates the user and returns to the authenticated Home.
+
+## Authenticated Home
+
+- Primary actions: "Logout", "Create", and "Respond".
+- “Create”: goes to Space Selection.
+- “Respond”: goes to the Respond page.
+
+Let’s split these two paths:
+
+## 1. Select Space
+
+A list of your spaces, always including your **Personal Space**, the **My Organizations** you’re part of, and possibly **Groups** (classes) within those organizations. There’s also the option to **create a new organization**.
+
+After choosing a space → proceed to that space’s **Dashboard**.
+
+## 2. Respond page
+
+- A NavBar with quick access (Logout, go to Create → Select Space, theme switch, etc.).
+- Shows assessments the user can take, with sections:
+  - **In progress**: assessments that allow pause/resume until a deadline.
+  - **Completed**: history of what’s already been done.
+  - **Available to you**: by space (public ones and those from organizations/groups you belong to).
+- Entering an in-progress assessment:
+  - There may be a progress bar (if configured; default: “yes”).
+  - Default pagination: 1 item per page (or X items per page, if configured).
+  - Resumes from where you left off (item page or scrolled to the item).
+- Entering a completed assessment:
+  - Shows completion date and, depending on the assessment’s policies, allows:
+    - viewing your submitted answers;
+    - seeing correct/incorrect (when applicable);
+    - seeing per-item and total score;
+    - viewing aggregated audience statistics.
+
+## Back to the Dashboard (for the selected space)
+
+The Dashboard should include the same NavBar as in the Respond section (likely present across most pages) and, in this context, a menu to switch spaces (including “New organization”). It should also include the following sections/actions:
+
+1. **New assessment**
+   - Creates a new assessment linked to the current space.
+2. **In production**
+   - Lists assessments in editorial phase (review, quality, adjustments) not yet published.
+   - Indicates your relation: owner, editor, or view/suggestion access.
+3. **Applied**
+   - Assessments already published/applied (active/closed).
+   - Depending on the assessment configuration:
+     - follow results in real time; or
+     - see results only after it ends.
+   - Access to statistics (as permitted).
+4. **Item Bank**
+   - Search items in repositories you have access to, create new items, edit items, etc.
+
+So yes — this project is getting more complex, right? And that’s fine. The foundation keeps getting clearer: defined flows, consistent naming, and a path to move forward with less worry about a hard, unnecessary refactor in the future — not that it won’t happen, but at least we reduce the chances. So far, I bought the domain, configured DNS, set up authentication with Supabase (Google), and I’m working on the Home while, in parallel, sketching these flows and user maps, digging into details to keep building the basics with an eye on the “beams.”
+
+I’ll share more soon!

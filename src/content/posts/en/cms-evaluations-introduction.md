@@ -4,7 +4,7 @@ date: 2025-09-12
 lang: "en"
 translationOf: "cms-avaliacoes-introducao"
 description: "An introduction for a new project of builinding a cms for evaluations, and some general, basic fundamentals"
-tags: ["cms", "project", "first"]
+tags: ["cms", "project", "first", "faça um teste" ]
 ---
 
 Not long ago, I was part of a specialized editorial team for educational evaluations at a large corporation. In that team, we used a proprietary platform that covered some stages of our production workflow, but often not in the way we would have liked. From that experience, I realized there isn’t a truly satisfactory way to create, manage, deliver, and track evaluations for a wide variety of purposes. Existing solutions—like Google Forms, Typeform, Moodle, and other proprietary platforms I’ve worked with—meet part of the need, but they don’t provide an integrated experience that covers all stages of an evaluation’s lifecycle, nor do they offer a fluid experience for independent educators and editors, for institutions, and, of course, for respondents.

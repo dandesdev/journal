@@ -4,7 +4,7 @@ date: 2025-09-12
 lang: "br"
 translationOf: "cms-evaluations-introduction"
 description: "A introdução para um novo projeto: um sistema de gerenciamento de conteúdo para avaliações, e um panorama básico geral"
-tags: ["cms", "project", "first"]
+tags: ["cms", "project", "first", "faça um teste" ]
 ---
 
 Há pouco tempo, fiz parte de um editorial específico de avaliações educacionais em uma grande corporação. Nesse time, utilizávamos uma plataforma proprietária que atendia a algumas etapas do nosso fluxo de produção, porém, muitas vezes, não da maneira como gostaríamos. Com essa experiência, percebi que não existe uma forma verdadeiramente satisfatória de criar, gerenciar, aplicar e acompanhar avaliações para os mais diferentes fins. As soluções existentes, como Google Forms, Typeform, Moodle e outras plataformas proprietárias com as quais tive contato, atendem parcialmente, mas não cobrem de forma integrada todas as etapas do ciclo de vida de uma avaliação, nem oferecem uma experiência fluida para educadores e editores autônomos, para instituições e também, é claro, para os respondentes.

@@ -160,11 +160,11 @@ body::after {
 /* headings */
 .prose h1 {
   font-family: "Ancizar Serif";
-  font-size: 3.75; /* ~text-3xl */
+  font-size: 3.75rem; /* ~text-3xl */
   line-height: 1.25;
   font-weight: 700;
-  margin-top: 5.625;
-  margin-bottom: 3.75;
+  margin-top: 5.625rem;
+  margin-bottom: 3.75rem;
 }
 
 .prose h2 {
