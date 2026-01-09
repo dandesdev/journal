@@ -7,8 +7,6 @@ description: "A minha reflexão pessoal nessa virada de ano em relação a carre
 tags: ["career", "AI", "reflection"]
 ---
 
-2026, Vibecoding?
-
 ## A utopia tecnológica
 
 Segundo o Gemini (IA do Google), "a utopia tecnológica é a crença de que avanços científicos e tecnológicos podem criar uma sociedade ideal, eliminando problemas como escassez, sofrimento e até a morte, através de inovações como cidades inteligentes, IA e biotecnologia"_.

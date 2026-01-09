@@ -7,8 +7,6 @@ description: "My personal thoughts on this new year regarding my tech career."
 tags: ["career", "AI", "reflection"]
 ---
 
-2026, Vibecoding?
-
 ## The technological utopia
 
 According to Gemini (Google's AI), "the technological utopia is the belief that scientific and technological advancements can create an ideal society, eliminating problems like scarcity, suffering, and even death, through innovations such as smart cities, AI, and biotechnology."
