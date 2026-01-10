@@ -15,9 +15,6 @@ export const Pagination: React.FC<Props> = ({
   onPageChange,
 }) => {
 
-
-  console.log(page < totalPages);
-
   return (
     <nav
       className="mt-6 gap-4 items-center justify-center"

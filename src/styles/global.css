@@ -159,6 +159,8 @@ body::after {
   font-family: "Inter";
   line-height: 1.6;
   font-size: 1.056rem;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 /* headings */
@@ -259,8 +261,8 @@ pre,
 
 /* Tables */
 .prose table {
-  width: 100%;
-  display: block;
+  display: inline-block;
+  max-width: 100%;
   overflow-x: auto;
   border-collapse: collapse;
   margin: 1rem 0;
