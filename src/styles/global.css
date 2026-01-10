@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Fira Code";
-  src: url("/fonts/FiraCode-VariableFont_wght.ttf")
-    format("truetype");
+  src: url("/fonts/FiraCode-VariableFont_wght.ttf") format("truetype");
   font-weight: 300 700;
   font-display: swap;
 }
@@ -51,14 +50,17 @@
   --font-serif: "Fraunces", serif;
 
   @keyframes zinzout {
+
     0%,
     100% {
       transform: scale(1);
     }
+
     90% {
       transform: scale(1.05);
     }
   }
+
   --animate-zinzout: zinzout 3s ease-in;
 }
 
@@ -133,6 +135,7 @@ body::after {
 
 /* Ensure Shiki variables are applied to .astro-code blocks */
 @media (prefers-color-scheme: dark) {
+
   .astro-code,
   .astro-code span {
     color: var(--shiki-dark) !important;
@@ -145,6 +148,7 @@ body::after {
   color: var(--shiki-dark) !important;
   background-color: var(--shiki-dark-bg) !important;
 }
+
 [data-theme="light"] .astro-code,
 [data-theme="light"] .astro-code span {
   color: var(--shiki-light) !important;
@@ -160,7 +164,8 @@ body::after {
 /* headings */
 .prose h1 {
   font-family: "Ancizar Serif";
-  font-size: 3.75rem; /* ~text-3xl */
+  font-size: 3.75rem;
+  /* ~text-3xl */
   line-height: 1.25;
   font-weight: 700;
   margin-top: 5.625rem;
@@ -169,7 +174,8 @@ body::after {
 
 .prose h2 {
   font-family: "Ancizar Serif";
-  font-size: 1.875rem; /* ~text-2xl */
+  font-size: 1.875rem;
+  /* ~text-2xl */
   line-height: 1;
   font-weight: 700;
   margin-top: 2.8125rem;
@@ -185,7 +191,7 @@ body::after {
   margin-bottom: 1.625rem;
 }
 
-.prose > p:first-of-type::first-letter {
+.prose>p:first-of-type::first-letter {
   font-family: "Ancizar Serif";
   font-size: 3.519rem;
   float: left;
@@ -204,7 +210,7 @@ body::after {
   text-decoration: underline;
 }
 
-.prose a :hover{
+.prose a :hover {
   background-color: rgba(var(--secondary)/0.1);
 }
 
@@ -249,4 +255,25 @@ pre,
 [data-theme="dark"] .prose pre,
 [data-theme="dark"] .astro-code {
   background: rgba(255, 255, 255, 0.03);
+}
+
+/* Tables */
+.prose table {
+  width: 100%;
+  display: block;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.prose th,
+.prose td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(var(--neutral) / 0.3);
+  text-align: left;
+}
+
+.prose th {
+  background: rgba(var(--neutral) / 0.1);
+  font-weight: 600;
 }
