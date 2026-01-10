@@ -261,8 +261,8 @@ pre,
 
 /* Tables */
 .prose table {
-  display: inline-block;
-  max-width: 100%;
+  display: block;
+  max-width: calc(100vw - 4rem);
   overflow-x: auto;
   border-collapse: collapse;
   margin: 1rem 0;
