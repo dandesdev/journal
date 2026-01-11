@@ -1,3 +1,7 @@
+@import "tailwindcss";
+
+@import "katex/dist/katex.min.css";
+
 @font-face {
   font-family: "Fira Code";
   src: url("/fonts/FiraCode-VariableFont_wght.ttf") format("truetype");
@@ -25,10 +29,6 @@
   font-weight: 300 700;
   font-display: swap;
 }
-
-@import "tailwindcss";
-
-@import "katex/dist/katex.min.css";
 
 @theme {
   --background: 8 10 31;

@@ -89,7 +89,9 @@ export const PostsList: React.FC<Props> = ({ lang, posts }) => {
                     {post.data.title}
                   </p>
                   <p className="text-neutral text-sm">
-                    &#8618; {post.data.description} —{" "}
+                    &#8618; {post.data.description}
+                  </p>
+                  <p className="text-neutral text-sm -translate-x-2">
                     {new Date(post.data.date).toDateString()}
                   </p>
                 </div>
