@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import type { Lang } from "../types";
 import { SortToggle } from "./SortToggle";
 import { Pagination } from "./Pagination";
+import { usePostsPerPage } from "../hooks/usePostsPerPage";
 
 type Post = {
   slug: string;
@@ -20,7 +21,7 @@ type Props = {
 export const PostsList: React.FC<Props> = ({ lang, posts }) => {
   const [sort, setSort] = useState<"newest" | "oldest">("newest");
   const [page, setPage] = useState(1);
-  const POSTS_PER_PAGE = 5;
+  const postsPerPage = usePostsPerPage();
 
   // On mount, read query params
   useEffect(() => {
@@ -48,9 +49,17 @@ export const PostsList: React.FC<Props> = ({ lang, posts }) => {
       : b.data.date.getTime() - a.data.date.getTime()
   );
 
-  const totalPages = Math.ceil(sorted.length / POSTS_PER_PAGE);
-  const start = (page - 1) * POSTS_PER_PAGE;
-  const paginated = sorted.slice(start, start + POSTS_PER_PAGE);
+  const totalPages = Math.ceil(sorted.length / postsPerPage);
+  
+  // Clamp page to valid range when postsPerPage changes (e.g., on window resize)
+  useEffect(() => {
+    if (page > totalPages && totalPages > 0) {
+      setPage(totalPages);
+    }
+  }, [page, totalPages]);
+
+  const start = (page - 1) * postsPerPage;
+  const paginated = sorted.slice(start, start + postsPerPage);
 
   // Shortcuts
   useEffect(() => {
@@ -84,15 +93,15 @@ export const PostsList: React.FC<Props> = ({ lang, posts }) => {
           {paginated.map((post) => (
             <li key={post.slug}>
               <a href={`/journal/${lang}/posts/${post.slug}`}>
-                <div className="group hover:bg-secondary/10">
+                <div className="group hover:bg-secondary/10 transition-all duration-200 p-1">
                   <p className="text-xl group-hover:underline font-bold">
                     {post.data.title}
                   </p>
                   <p className="text-neutral text-sm">
                     &#8618; {post.data.description}
                   </p>
-                  <p className="text-neutral text-sm -translate-x-2">
-                    {new Date(post.data.date).toDateString()}
+                  <p className="flex flex-row gap-2 text-neutral text-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="hidden"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>{new Date(post.data.date).toDateString()}
                   </p>
                 </div>
               </a>
